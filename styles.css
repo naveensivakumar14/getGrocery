@@ -7,8 +7,7 @@
 body{
     width: 100%;
     height: 100vh;
-    /* background-color: rgb(240, 239, 243); */
-    background-color: #A294F9;
+    background-color: rgb(240, 239, 243);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -18,14 +17,13 @@ body{
 }
 
 .container{
-    width: 375px;
-    height: 520px;
+    width: 800px;
+    height: 480px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.08);
     padding: 20px;
     overflow-y: scroll;
-
 }
 
 .container::-webkit-scrollbar{
@@ -34,18 +32,21 @@ body{
 
 .container form{
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 2px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    
 }
 
 .container form input{
-    border: none;
+    border: 1px solid black;
+    text-align: center;
     outline: none;
     box-shadow: none;
-    width: 100%;
+    width: 50%;
     font-size: 14px;
     font-weight: 600;
     padding: 8px 10px;
@@ -58,6 +59,8 @@ body{
 
 .product-list{
     padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 .product{
     display:flex;
@@ -66,8 +69,8 @@ body{
     padding-bottom: 5px;
 }
 .product img{
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 5px;
 }
