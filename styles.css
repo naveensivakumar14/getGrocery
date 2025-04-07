@@ -56,11 +56,11 @@ body{
 
 .hero{
     background-color: #1d1d1d;
-    height: 30vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .hero h1{
