@@ -16,6 +16,12 @@ body{
     font-family: "Gabarito", sans-serif
 }
 
+.logo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
 .navbar {
     width: 100%;
     padding: 20px;
@@ -23,6 +29,8 @@ body{
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+   
 }
 .navbar ul{
     display: flex;
@@ -52,22 +60,47 @@ body{
     border-radius: 50%;
 }
 
-
-
 .hero{
-    background-color: #1d1d1d;
-    height: 60vh;
+   background-color: #a8ffa9;
+    height: 90vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
 }
 
-.hero h1{
-    color: white;
-    font-size: 48px;
-    font-weight: 400;
+
+.hero p{
+    font-size: 20px; 
 }
+
+/*Typing Style text animation*/
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid black;
+    width: 0;
+    animation: typing 2s steps(11) forwards, blink 0.6s  infinite;
+    color: black;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 10ch } /* "getGrocery" has 11 characters */
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+
+
+
+
 
 .container{
     width: 800px;
